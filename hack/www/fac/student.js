@@ -8,6 +8,6 @@ function StudentServ () {
   return {
     getAll : function () {
       return students;
-    },
+    }
   };
 }
