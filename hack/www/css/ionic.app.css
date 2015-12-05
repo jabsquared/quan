@@ -9097,7 +9097,7 @@ a {
 
 .bottom-content {
   position: absolute;
-  bottom: 0px;
+  padding-top: 100px;
   width: 100%; }
 
 .sign {

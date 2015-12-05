@@ -32,7 +32,7 @@ function config($stateProvider, $urlRouterProvider) {
       url: '/student',
       templateUrl: 'com/student/student.html',
       controller: 'StudentCtrl'
-    })
+    });
     // .state('app.deal', {
     //   url: '/deallists/:dealId',
     //   views: {
