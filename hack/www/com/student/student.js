@@ -4,9 +4,15 @@ function StudentCtrl($scope, SocketServ, StudentServ) {
   console.log('StudentCtrl');
 
   $scope.data = {
-    
+
   };
+
   $scope.teams = StudentServ.getAll();
+
+  $scope.submit = function () {
+    console.log($scope.data);
+    SocketServ.emit("Student Answers", $scope.data);
+  };
 
   SocketServ.on("Student Receives", function (data) {
     console.log(data);

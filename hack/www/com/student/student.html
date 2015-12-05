@@ -1,4 +1,11 @@
 <ion-view view-title="Student View" class="student">
+  <ion-content>
+    <!-- <button class="button button-balanced">
+      submit
+    </button> -->
+    <h1 ng-if="!data.question">Waiting for a question!</h1>
+    <h1 ng-if="data.question">{{data.question}}</h1>
+  </ion-content>
 
   <div class="bottom-content">
     <div class="list">
@@ -7,17 +14,13 @@
         <div class="button-bar">
 
           <ion-radio class="col col-50"
-           ng-model="data.answers[0]"
+           ng-repeat="ans in data.answers"
+           ng-if="$index < 2"
+           ng-model="data.answer"
+           ng-value="$index"
            icon="ion-asterisk">
-             {{data.answers[0]}}
+              {{ ans }}
           </ion-radio>
-          <ion-radio class="col col-50"
-           ng-model="data.answers[1]"
-           icon="ion-asterisk">
-             {{data.answers[1]}}
-          </ion-radio>
-
-
         </div>
       </div>
 
@@ -25,26 +28,19 @@
         <div class="button-bar">
 
           <ion-radio class="col col-50"
-           ng-model="data.answers[2]"
-           icon="ion-asterisk">
-             {{data.answers[2]}}
-          </ion-radio>
-          <ion-radio class="col col-50"
-           ng-model="data.answers[3]"
-           icon="ion-asterisk">
-             {{data.answers[3]}}
-          </ion-radio>
-
+         ng-repeat="ans in data.answers"
+         ng-if="$index >= 2"
+         ng-model="data.answer"
+         ng-value="$index"
+         icon="ion-asterisk">
+            {{ ans }}
+        </ion-radio>
       </div>
 
       </div>
     </div>
-    <!-- <ion-content>
-      <button class="button button-balanced">
-        submit
-      </button>
-    </ion-content> -->
 
+    <button type="button" class="button button-full button-positive" ng-click="submit()">Submit</button>
   </div>
 
 
