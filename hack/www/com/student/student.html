@@ -1,0 +1,16 @@
+<ion-view view-title="Student View" class="student">
+
+  <form class name="myForm" ng-controller="StudentCtrl">
+      <p>Favorite Beatle</p>
+      <ul>
+          <li ng-repeat="person in people">
+              <label>{{person.name}}
+                  <input type="radio" ng-model="$parent.name" name="name" value="{{person.name}}" required />
+              </label>
+          </li>
+      </ul>
+      <p><tt>myForm.$invalid: {{myForm.$invalid}}</tt></p>
+      <button ng-disabled="myForm.$invalid">Submit</button>
+  </form>
+
+</ion-view>

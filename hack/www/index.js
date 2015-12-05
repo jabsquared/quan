@@ -5,51 +5,34 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.controllers' is found in controllers.js
 
-angular.module('FlashDeal', ['ionic', 'FlashDeal.Ctrls'])
+var app = angular.module('quan', ['ionic'])
+  .config(config)
   .run(run)
-  .config(config);
-
-function run($ionicPlatform) {
-  $ionicPlatform.ready(function () {
-    // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
-    // for form inputs)
-    if(window.cordova && window.cordova.plugins.Keyboard) {
-      cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
-      cordova.plugins.Keyboard.disableScroll(true);
-    }
-    if(window.StatusBar) {
-      // org.apache.cordova.statusbar required
-      StatusBar.styleDefault();
-    }
-  });
-}
-
-angular.module('FlashDeal.Ctrls', [])
-  .controller('MenuCtrl', MenuCtrl)
-  .controller('DealListCtrl', DealListCtrl)
-  .controller('DealListsCtrl', DealListsCtrl);
+  .controller('HomeCtrl', HomeCtrl)
+  .controller('TeacherCtrl', TeacherCtrl)
+  .controller('StudentCtrl', StudentCtrl);
 
 function config($stateProvider, $urlRouterProvider) {
 
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/app/deallists');
+  console.log('config');
+  $urlRouterProvider.otherwise('/');
 
-  $stateProvider
-    .state('app', {
-      url: '/app',
-      abstract: true,
-      templateUrl: 'com/menu/menu.html',
-      controller: 'MenuCtrl'
+  $stateProvider.state('home', {
+      url: '/',
+      templateUrl: 'com/home/home.html',
+      controller: 'HomeCtrl'
     })
-    .state('app.deallists', {
-      url: '/deallists',
-      views: {
-        'menuContent': {
-          templateUrl: 'com/deal/lists.html',
-          controller: 'DealListsCtrl'
-        }
-      }
+    .state('teacher', {
+      url: '/teacher',
+      templateUrl: 'com/teacher/teacher.html',
+      controller: 'TeacherCtrl'
     })
+    .state('student', {
+      url: '/student',
+      templateUrl: 'com/student/student.html',
+      controller: 'StudentCtrl'
+    });
     // .state('app.deal', {
     //   url: '/deallists/:dealId',
     //   views: {
@@ -59,4 +42,20 @@ function config($stateProvider, $urlRouterProvider) {
     //     }
     //   }
     // });
+}
+
+function run($ionicPlatform) {
+  $ionicPlatform.ready(function () {
+    // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
+    // for form inputs)
+    console.log('run');
+    if(window.cordova && window.cordova.plugins.Keyboard) {
+      cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
+      cordova.plugins.Keyboard.disableScroll(true);
+    }
+    if(window.StatusBar) {
+      // org.apache.cordova.statusbar required
+      StatusBar.styleDefault();
+    }
+  });
 }
