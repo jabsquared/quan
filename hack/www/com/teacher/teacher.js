@@ -1,7 +1,11 @@
 'use strict';
 
-function TeacherCtrl($scope) {
+function TeacherCtrl($scope, SocketServ) {
   console.log('TeacherCtrl');
+
+  SocketServ.on('connection', function (data) {
+    console.log(data);
+  });
 
   $scope.pushQuestion = function (q) {
     console.log("Question (" + q + ") Pushed!");
