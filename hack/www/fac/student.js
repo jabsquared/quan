@@ -1,8 +1,10 @@
+'use strict';
+
 function StudentServ ($scope, SocketServ, QuestionServ) {
   console.log('StudentServ');
 
-  SocketServ.on("Ask Question", function (data) {
-    console.log("Recived: " + data);
+  SocketServ.on("Student Receives", function (data) {
+    console.log("Recieved: " + data);
   });
 
   var students = [{
