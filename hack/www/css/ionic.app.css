@@ -9114,3 +9114,6 @@ a {
 .button.button-balanced {
   margin-top: 100px;
   margin-left: 94%; }
+
+.bar-dark .button {
+  background-color: green; }
