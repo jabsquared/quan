@@ -1,16 +1,29 @@
 <ion-view view-title="Student View" class="student">
 
-  <form class name="myForm" ng-controller="StudentCtrl">
-      <p>Favorite Beatle</p>
-      <ul>
-          <li ng-repeat="person in people">
-              <label>{{person.name}}
-                  <input type="radio" ng-model="$parent.name" name="name" value="{{person.name}}" required />
-              </label>
-          </li>
-      </ul>
-      <p><tt>myForm.$invalid: {{myForm.$invalid}}</tt></p>
-      <button ng-disabled="myForm.$invalid">Submit</button>
-  </form>
+  <ion-view title="Example" class="slide-left-right">
+    <ion-content padding="true">
+      <h1>{{team.icon}}</h1>
+    </ion-content>
+  </ion-view>
+  <div class="bottom-content">
+
+    <div class="list">
+
+      <div class="button-bar">
+        <ion-radio class="col" ng-repeat="team in teams" ng-value="team.name" ng-model="data.violator" icon="ion-asterisk">
+          {{ team.name }}
+        </ion-radio>
+      </div>
+
+
+    </div>
+
+
+
+  </div>
+
+  <button class="button button-balanced">
+    button-balanced
+  </button>
 
 </ion-view>
