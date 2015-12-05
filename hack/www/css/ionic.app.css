@@ -9089,6 +9089,12 @@ a.button {
   -webkit-transition-duration: 0s;
   transition-duration: 0s; }
 
+.padDown {
+  padding-top: 100px; }
+
+.teacher .questions {
+  margin-bottom: 5px; }
+
 a {
   text-decoration: none; }
 

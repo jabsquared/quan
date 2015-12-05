@@ -2,6 +2,11 @@
 
 function TeacherCtrl($scope) {
   console.log('TeacherCtrl');
+
+  $scope.pushQuestion = function (q) {
+    console.log("Question (" + q + ") Pushed!");
+  }
+
   $scope.questions = [
     {
       question: "When was WWI started?",
