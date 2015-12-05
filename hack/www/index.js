@@ -5,10 +5,13 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.controllers' is found in controllers.js
 
-var app = angular.module('quan', ['ionic'])
+var app = angular.module('quan',[
+    'ionic',
+    'btford.socket-io'
+  ])
   .config(config)
   .run(run)
-  .factory('socketServ', SocketServ)
+  .factory('SocketServ', SocketServ)
   .controller('HomeCtrl', HomeCtrl)
   .controller('TeacherCtrl', TeacherCtrl)
   .controller('StudentCtrl', StudentCtrl);
@@ -34,15 +37,15 @@ function config($stateProvider, $urlRouterProvider) {
       templateUrl: 'com/student/student.html',
       controller: 'StudentCtrl'
     });
-    // .state('app.deal', {
-    //   url: '/deallists/:dealId',
-    //   views: {
-    //     'menuContent': {
-    //       templateUrl: 'templates/playlist.html',
-    //       controller: 'DealListCtrl'
-    //     }
-    //   }
-    // });
+  // .state('app.deal', {
+  //   url: '/deallists/:dealId',
+  //   views: {
+  //     'menuContent': {
+  //       templateUrl: 'templates/playlist.html',
+  //       controller: 'DealListCtrl'
+  //     }
+  //   }
+  // });
 }
 
 function run($ionicPlatform) {

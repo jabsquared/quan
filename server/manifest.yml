@@ -1,9 +1,6 @@
 applications:
-- services:
-  - Cloudant NoSQL DB-uq
-  - Redis Cloud-o3
-  host: quan
-  name: quan
+- host: quan-api
+  name: quan-api
   command: node lab.js
   path: .
   domain: mybluemix.net
