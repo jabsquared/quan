@@ -1,6 +1,6 @@
 'use strict';
 
-function TeacherCtrl($scope, SocketServ, QuestionServ) {
+function TeacherCtrl($scope, SocketServ, DatabaseServ) {
   console.log('TeacherCtrl');
 
   $scope.pushQuestion = function (q) {
@@ -9,5 +9,5 @@ function TeacherCtrl($scope, SocketServ, QuestionServ) {
     SocketServ.emit('Teacher Asks', q);
   };
 
-  $scope.questions = QuestionServ.getAll();
+  $scope.questions = DatabaseServ.getQuestions();
 }
