@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
 
-  <title>Flash Deal</title>
+  <title>QUAN</title>
 
   <!-- compiled css output -->
   <link href="css/ionic.app.css" rel="stylesheet">
@@ -17,17 +17,23 @@
   <script src="cordova.js"></script>
 
   <!-- com's js -->
-  <script src="com/deal/lists.js"></script>
-  <script src="com/deal/list.js"></script>
-
-  <script src="com/menu/menu.js"></script>
+  <script src="com/home/home.js"></script>
+  <script src="com/teacher/teacher.js"></script>
+  <script src="com/student/student.js"></script>
 
   <!-- index's js -->
   <script src="index.js"></script>
 </head>
 
-<body ng-app="FlashDeal">
-
+<body ng-app="quan">
+  <ion-nav-bar class="bar-dark">
+      <ion-nav-buttons side="left">
+        <a nav-direction="back" href="#/">
+          <button class="button icon-left ion-grid">
+          </button>
+        </a>
+      </ion-nav-buttons>
+    </ion-nav-bar>
   <ion-nav-view></ion-nav-view>
 
 </body>

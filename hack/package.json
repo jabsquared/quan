@@ -1,7 +1,7 @@
 {
-  "name": "flashdeal",
+  "name": "quan",
   "version": "1.1.1",
-  "description": "flashDeal: An Ionic project",
+  "description": "quan: Q&A for education",
   "dependencies": {
     "gulp": "^3.5.6",
     "gulp-sass": "^2.0.4",

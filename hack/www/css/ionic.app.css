@@ -9088,3 +9088,17 @@ a.button {
   opacity: 0;
   -webkit-transition-duration: 0s;
   transition-duration: 0s; }
+
+a {
+  text-decoration: none; }
+
+.text-center {
+  text-align: center; }
+
+.bottom-content {
+  position: absolute;
+  bottom: 0px;
+  width: 100%; }
+
+.sign {
+  width: 100%; }

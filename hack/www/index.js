@@ -16,7 +16,7 @@ function config($stateProvider, $urlRouterProvider) {
 
   // if none of the above states are matched, use this as the fallback
   console.log('config');
-  $urlRouterProvider.otherwise('/home');
+  $urlRouterProvider.otherwise('/');
 
   $stateProvider.state('home', {
       url: '/',
