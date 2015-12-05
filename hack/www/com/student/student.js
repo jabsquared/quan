@@ -3,17 +3,20 @@
 function StudentCtrl($scope, SocketServ, StudentServ) {
   console.log('StudentCtrl');
 
+  $scope.data = {
+    
+  };
+  $scope.teams = StudentServ.getAll();
+
   SocketServ.on("Student Receives", function (data) {
-    console.log("Recived: " + data);
+    console.log(data);
+    $scope.data = data;
   });
 
   // SocketServ.on("Teacher Asks", function (data) {
   //   console.log("Recived: " + data);
   // });
 
-  $scope.data = {};
-
-  $scope.teams = StudentServ.getAll();
   // With the new view caching in Ionic, Controllers are only called
   // when they are recreated or on app start, instead of every page change.
   // To listen for when this page is active (for example, to refresh data),

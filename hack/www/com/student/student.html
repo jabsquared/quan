@@ -7,13 +7,17 @@
         <div class="button-bar">
 
           <ion-radio class="col col-50"
-           ng-repeat="team in teams"
-           ng-if="$index < 2"
-           ng-value="team.name"
-           ng-model="data.violator"
+           ng-model="data.answers[0]"
            icon="ion-asterisk">
-            {{ team.question }}
+             {{data.answers[0]}}
           </ion-radio>
+          <ion-radio class="col col-50"
+           ng-model="data.answers[1]"
+           icon="ion-asterisk">
+             {{data.answers[1]}}
+          </ion-radio>
+
+
         </div>
       </div>
 
@@ -21,13 +25,16 @@
         <div class="button-bar">
 
           <ion-radio class="col col-50"
-         ng-repeat="team in teams"
-         ng-if="$index >= 2"
-         ng-value="team.name"
-         ng-model="data.violator"
-         icon="ion-asterisk">
-            {{ team.question }}
-        </ion-radio>
+           ng-model="data.answers[2]"
+           icon="ion-asterisk">
+             {{data.answers[2]}}
+          </ion-radio>
+          <ion-radio class="col col-50"
+           ng-model="data.answers[3]"
+           icon="ion-asterisk">
+             {{data.answers[3]}}
+          </ion-radio>
+
       </div>
 
       </div>
