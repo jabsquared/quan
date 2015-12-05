@@ -7,14 +7,24 @@
 
   <title>QUAN</title>
 
+  <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+
   <!-- compiled css output -->
-  <link href="css/ionic.app.css" rel="stylesheet">
+  <!-- <link href="css/ionic.app.css" rel="stylesheet"> -->
+  <link href="css/ionic.app.min.css" rel="stylesheet">
 
   <!-- ionic/angularjs js -->
   <script src="lib/ionic/js/ionic.bundle.js"></script>
 
   <!-- cordova script (this will be a 404 during development) -->
   <script src="cordova.js"></script>
+
+  <!-- 3rd party's js -->
+  <script src="lib/socket.io-client/socket.io.js"></script>
+  <script src="lib/angular-sanitize/angular-sanitize.min.js"></script>
+
+  <!-- fac's js -->
+  <script src="fac/socket.js"></script>
 
   <!-- com's js -->
   <script src="com/home/home.js"></script>

@@ -8,6 +8,7 @@
 var app = angular.module('quan', ['ionic'])
   .config(config)
   .run(run)
+  .factory('socketServ', SocketServ)
   .controller('HomeCtrl', HomeCtrl)
   .controller('TeacherCtrl', TeacherCtrl)
   .controller('StudentCtrl', StudentCtrl);
