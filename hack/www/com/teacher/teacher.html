@@ -1,8 +1,36 @@
-<ion-view view-title="Teacher View" class="teacher">
+<ion-view class="teacher" view-title="Teacher View">
 
   <ion-content class="padding text-center">
+    <div class="list text-left">
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Question:</span>
+        <input placeholder="What year did WWI start?" type="text">
+      </label>
+
+      <!-- Question block -->
+      <div class="row" style="padding: 0; margin:0;">
+        <div class="col col-90">
+          <label class="item item-input item-stacked-label">
+            <span class="input-label">First Answer</span>
+            <input placeholder="1943" type="text">
+        </label>
+        </div>
+        <div class="col col-10">
+          <li class="item item-checkbox">
+            <label class="checkbox">
+              <input type="checkbox">
+            </label>
+          </li>
+        </div>
+      </div>
 
 
-  </ion-content>
+    <label class="item item-input item-stacked-label">
+      <span class="input-label">Email</span>
+      <input placeholder="john@suhr.com" type="text">
+    </label>
+  </div>
+
+</ion-content>
 
 </ion-view>
