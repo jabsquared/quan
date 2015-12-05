@@ -1,0 +1,26 @@
+{
+  "name": "quan-api",
+  "version": "0.0.9",
+  "description": "Yo mama's API for QUAN",
+  "main": "lab.js",
+  "scripts": {
+    "start": "node lab.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "quan"
+  ],
+  "author": "jabSquared",
+  "license": "MIT",
+  "dependencies": {
+    "hiredis": "^0.4.1",
+    "pouchdb": "^4.0.3",
+    "pouchdb-upsert": "^1.1.3",
+    "redis": "^2.0.1",
+    "restify": "^4.0.3",
+    "socket.io": "^1.3.7"
+  },
+  "repository": {
+    "type": "git"
+  }
+}

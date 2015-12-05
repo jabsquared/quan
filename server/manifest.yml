@@ -1,0 +1,12 @@
+applications:
+- services:
+  - Cloudant NoSQL DB-uq
+  - Redis Cloud-o3
+  host: quan
+  name: quan
+  command: node lab.js
+  path: .
+  domain: mybluemix.net
+  instances: 1
+  memory: 2048M
+  disk_quota: 512M
