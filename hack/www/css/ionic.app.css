@@ -9089,6 +9089,9 @@ a.button {
   -webkit-transition-duration: 0s;
   transition-duration: 0s; }
 
+.student .list {
+  padding-bottom: 30px; }
+
 .teacher .questions {
   margin-bottom: 5px; }
 
@@ -9101,7 +9104,16 @@ a {
 .bottom-content {
   position: absolute;
   bottom: 0;
-  width: 100%; }
+  width: 100%;
+  margin-bottom: 50px;
+  padding-bottom: 0px; }
 
 .sign {
   width: 100%; }
+
+.button.button-balanced {
+  margin-top: 100px;
+  margin-left: 94%; }
+
+.bar-dark .button {
+  background-color: green; }

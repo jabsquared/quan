@@ -35,8 +35,19 @@ a {
   position: absolute;
   bottom: 0;
   width: 100%;
+  margin-bottom: 50px;
+  padding-bottom: 0px;
 }
 
 .sign {
   width: 100%;
+}
+
+.button.button-balanced {
+  margin-top: 100px;
+  margin-left: 94%;
+}
+
+.bar-dark .button {
+  background-color: green;
 }

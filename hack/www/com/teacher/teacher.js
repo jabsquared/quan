@@ -1,35 +1,62 @@
-'use strict';
+'use strict()';
 
 function TeacherCtrl($scope, SocketServ) {
   console.log('TeacherCtrl');
 
   $scope.pushQuestion = function (q) {
-    console.log("Question (" + q + ") Pushed!");
-  }
+    console.log("Question (" + q.question + ") Pushed!");
+  };
 
   $scope.questions = [
     {
-      question: "When was WWI started?",
-      category: "History"
-    },
-    {
-      question: "What is the capital of Oregon?",
-      category: "Geography",
+      question: "What are you less likely to leave home without?",
+      category: "NONE",
       answers: [
-        "1992",
-        "1942",
-        "1893",
-        "1953"
+        "Keys",
+        "Wallet",
+        "Phone",
+        "ID"
       ]
     },
     {
-      question: "How old is Obama?",
-      category: "Trivia",
+      question: "What is the the most common use of the phone?",
+      category: "NONE",
       answers: [
-        "45",
-        "39",
-        "51",
-        "41"
+        "Text",
+        "Social Media",
+        "Web",
+        "Games"
+      ]
+    },
+    {
+      question: "What do teachers fear the most?",
+      category: "NONE",
+      answers: [
+        "SnapChat",
+        "Instagram",
+        "Yoga",
+        "Phone"
+      ]
+    },
+    {
+      question: "What is the teacher's greatest challenge in a classroom?",
+      category: "NONE",
+      answers: [
+        "Interaction",
+        "Budget",
+        "Class Size",
+        "Tests"
+      ]
+    },
+    {
+      question: "What other tools have been used that haven’t worked?",
+      category: "NONE",
+      answers: [
+        "Chromebook",
+        "Smartboard",
+        "Pencil",
+        "Clicker",
+        "Phone"
       ]
     }
   ];
