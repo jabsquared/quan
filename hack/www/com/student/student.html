@@ -1,7 +1,43 @@
 <ion-view view-title="Student View" class="student">
 
   <ion-content class="padding text-center">
-
+    Question
+    <br> Picture
+    <br> etc...
   </ion-content>
+  <div class="bottom-content">
 
+    <div class="list">
+      <div class="item item-dark item-divider">
+        Team Violated: {{ data.violator }}
+      </div>
+
+      <div class="button-bar">
+        <ion-radio class="col" ng-repeat="team in teams" ng-value="team.name" ng-model="data.violator" icon="ion-asterisk">
+          {{ team.name }}
+        </ion-radio>
+      </div>
+      <div class="button-bar">
+        <ion-radio class="col" ng-repeat="team in teams" ng-value="team.name" ng-model="data.violator" icon="ion-asterisk">
+          {{ team.name }}
+        </ion-radio>
+      </div>
+
+
+      <label class="item item-input">
+        <span class="input-label">Number</span>
+        <input type="tel" placeholder="Number" ng-model="data.number">
+      </label>
+
+      <div class="button-bar">
+        <button class="button button-balanced item-icon-left" ng-click="submitCard()">
+          <i class="icon ion-checkmark"></i> Accept
+        </button>
+        <button class="button button-assertive item-icon-left" ng-click="closeModal()">
+          <i class="icon ion-close"></i> Cancel
+        </button>
+      </div>
+
+    </div>
+  </div>
 </ion-view>
