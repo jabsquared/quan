@@ -36,16 +36,17 @@ function StudentCtrl($scope) {
     {
       id: 'mu',
       icon: 'img/',
-      name: 'Man United',
+      name: 'What are you working on?',
       value: 1,
       score: 0
     }, {
       id: 'rm',
       icon: 'img/',
-      name: 'Real Mad',
+      name: 'None of the above',
       value: 2,
       score: 0
-    }
+    },
+  
   ];
 
   $scope.data = {};
