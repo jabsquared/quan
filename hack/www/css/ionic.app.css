@@ -9089,6 +9089,9 @@ a.button {
   -webkit-transition-duration: 0s;
   transition-duration: 0s; }
 
+.teacher .questions {
+  margin-bottom: 5px; }
+
 a {
   text-decoration: none; }
 
@@ -9097,7 +9100,7 @@ a {
 
 .bottom-content {
   position: absolute;
-  padding-top: 100px;
+  bottom: 0;
   width: 100%; }
 
 .sign {

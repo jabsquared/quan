@@ -1,33 +1,47 @@
 <ion-view view-title="Student View" class="student">
 
-  <ion-view title="Example" class="slide-left-right">
-    <ion-content padding="true">
-      <h1>{{team.icon}}</h1>
-    </ion-content>
-  </ion-view>
   <div class="bottom-content">
     <div class="list">
-      <div class="button-bar">
-        <ion-radio class="col" ng-repeat="team in teams" ng-value="team.name" ng-model="data.violator" icon="ion-asterisk">
-          {{ team.name }}
+      <div class="row">
+
+        <div class="button-bar">
+
+          <ion-radio class="col col-50"
+           ng-repeat="team in teams"
+           ng-if="$index < 2"
+           ng-value="team.name"
+           ng-model="data.violator"
+           icon="ion-asterisk">
+            {{ team.question }}
+          </ion-radio>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="button-bar">
+
+          <ion-radio class="col col-50"
+         ng-repeat="team in teams"
+         ng-if="$index >= 2"
+         ng-value="team.name"
+         ng-model="data.violator"
+         icon="ion-asterisk">
+            {{ team.question }}
         </ion-radio>
       </div>
 
-      <div class="button-bar">
-        <button class="button button-balanced item-icon-left" ng-click="submitCard()">
-          <i class="icon ion-checkmark"></i> Accept
-        </button>
-
-        <button class="button button-assertive item-icon-left" ng-click="closeModal()">
-          <i class="icon ion-close"></i> Cancel
-        </button>
       </div>
-
     </div>
+    <ion-content>
+      <button class="button button-balanced">
+        submit
+      </button>
+    </ion-content>
+
   </div>
 
-  <button class="button button-balanced">
-    button-balanced
-  </button>
+
+
+
 
 </ion-view>
