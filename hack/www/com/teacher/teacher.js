@@ -1,11 +1,11 @@
-'use strict';
+'use strict()';
 
 function TeacherCtrl($scope) {
   console.log('TeacherCtrl');
 
   $scope.pushQuestion = function (q) {
     console.log("Question (" + q.question + ") Pushed!");
-  }
+  };
 
   $scope.questions = [
     {
