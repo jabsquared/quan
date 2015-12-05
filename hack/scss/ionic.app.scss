@@ -14,10 +14,29 @@ $assertive:                       #ef473a !default;
 $royal:                           #886aea !default;
 $dark:                            #444 !default;
 */
-
 // The path for our ionicons font files, relative to the built CSS in www/css
-$ionicons-font-path: "../lib/ionic/fonts" !default;
+$ionicons-font-path: '../lib/ionic/fonts' !default;
 
 // Include all of Ionic
-@import "www/lib/ionic/scss/ionic";
+@import "www/lib/ionic/scss/ionic", "www/com/student/student", "www/com/teacher/teacher",
+"www/com/home/home";
 
+// Global Rules here:
+
+a {
+  text-decoration: none;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.bottom-content {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}
+
+.sign {
+  width: 100%;
+}
