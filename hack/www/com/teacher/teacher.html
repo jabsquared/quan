@@ -38,7 +38,7 @@
     </div>
 
     <div class="list text-left questions" ng-repeat="q in questions | filter:qSearch">
-      <a class="item item-icon-left" ng-click="pushQuestion(q.question)">
+      <a class="item item-icon-left" ng-click="pushQuestion(q)">
         <i class="icon ion-help-circled"></i>
         {{q.question}}
       </a>
