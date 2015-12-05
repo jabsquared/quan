@@ -9089,13 +9089,8 @@ a.button {
   -webkit-transition-duration: 0s;
   transition-duration: 0s; }
 
-<<<<<<< HEAD
 .student .list {
   padding-bottom: 30px; }
-=======
-.padDown {
-  padding-top: 100px; }
->>>>>>> 300edb595e7d8f39534a21fef8432510a18ab7a0
 
 .teacher .questions {
   margin-bottom: 5px; }
@@ -9110,7 +9105,8 @@ a {
   position: absolute;
   bottom: 0;
   width: 100%;
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+  padding-bottom: 0px; }
 
 .sign {
   width: 100%; }
