@@ -5,13 +5,15 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.controllers' is found in controllers.js
 
-var app = angular.module('quan',[
+var app = angular.module('quan', [
     'ionic',
     'btford.socket-io'
   ])
   .config(config)
   .run(run)
   .factory('SocketServ', SocketServ)
+  .factory('StudentServ', StudentServ)
+  .factory('QuestionServ', QuestionServ)
   .controller('HomeCtrl', HomeCtrl)
   .controller('TeacherCtrl', TeacherCtrl)
   .controller('StudentCtrl', StudentCtrl);
