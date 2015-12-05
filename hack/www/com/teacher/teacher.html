@@ -1,14 +1,14 @@
 <ion-view class="teacher" view-title="Teacher View">
 
   <ion-content class="padding text-center">
-    <div class="list text-left">
+    <!-- <div class="list text-left">
       <label class="item item-input item-stacked-label">
         <span class="input-label">Question:</span>
         <input placeholder="What year did WWI start?" type="text">
-      </label>
+      </label> -->
 
-      <!-- Question block -->
-      <div class="row" style="padding: 0; margin:0;">
+    <!-- Question block -->
+    <!-- <div class="row" style="padding: 0; margin:0;">
         <div class="col col-90">
           <label class="item item-input item-stacked-label">
             <span class="input-label">First Answer</span>
@@ -22,15 +22,28 @@
             </label>
           </li>
         </div>
-      </div>
+      </div> -->
 
-
-    <label class="item item-input item-stacked-label">
+    <!-- <label class="item item-input item-stacked-label">
       <span class="input-label">Email</span>
       <input placeholder="john@suhr.com" type="text">
     </label>
-  </div>
+  </div> -->
 
-</ion-content>
+    <div class="list list-inset">
+      <label class="item item-input">
+        <i class="icon ion-search placeholder-icon"></i>
+        <input placeholder="Search" type="text">
+      </label>
+    </div>
+
+    <div class="list text-left" ng-repeat="q in questions" style="margin-bottom: 5px">
+      <a class="item item-icon-left" href="#">
+        <i class="icon ion-email"></i>
+        {{q.question}}
+      </a>
+    </div>
+
+  </ion-content>
 
 </ion-view>
