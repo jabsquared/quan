@@ -1,7 +1,7 @@
 function StudentServ ($scope, SocketServ, QuestionServ) {
   console.log('StudentServ');
 
-  SocketServ.on("Ask Question", function (data) {
+  SocketServ.on("Student Receives", function (data) {
     console.log("Recived: " + data);
   });
 
