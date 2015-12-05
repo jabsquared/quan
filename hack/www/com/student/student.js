@@ -1,4 +1,4 @@
-'use strict()';
+'use strict';
 
 function StudentCtrl($scope) {
   console.log('StudentCtrl');

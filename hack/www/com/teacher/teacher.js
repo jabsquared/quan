@@ -5,6 +5,7 @@ function TeacherCtrl($scope, SocketServ, QuestionServ) {
 
   $scope.pushQuestion = function (q) {
     console.log("Question (" + q.question + ") Pushed!");
+
     SocketServ.emit('Teacher Asks', q);
   };
 
