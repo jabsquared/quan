@@ -1,28 +1,11 @@
-function DealListsCtrl($scope) {
-  $scope.playlists = [
+function checkCtrl($scope) {
+  $scope.checklist = [
     {
-      title: 'Reggae',
-      id: 1
+      id: 1,
+      name : 'Reggae',
+      input: ' ' ,
+      inputTime : inputTime,
     },
-    {
-      title: 'Chill',
-      id: 2
-    },
-    {
-      title: 'Dubstep',
-      id: 3
-    },
-    {
-      title: 'Indie',
-      id: 4
-    },
-    {
-      title: 'Rap',
-      id: 5
-    },
-    {
-      title: 'Cowbell',
-      id: 6
-    }
+
   ];
 }
