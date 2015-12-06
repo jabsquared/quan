@@ -9,10 +9,10 @@
       <h1 ng-if="data.question">{{data.question}}</h1>
     </div>
 
-    <div class="card info-img">
-      <img ng-src="../img/info/{{data.imgs[data.answer]}}" alt="{{data.answer}}"/>
+    <div class="card">
+      <img ng-if="data.answer" src="img/info/{{data.imgs[data.answer]}}" alt="" />
     </div>
-
+    <h1 ng-bind="counter" style="text-center"></h1>
   </ion-content>
 
   <div class="bottom-content">
@@ -21,13 +21,8 @@
 
         <div class="button-bar">
 
-          <ion-radio class="col col-50"
-           ng-repeat="ans in data.answers"
-           ng-if="$index < 2"
-           ng-model="data.answer"
-           ng-value="$index"
-           icon="ion-asterisk">
-              {{ ans }}
+          <ion-radio class="col col-50" ng-repeat="ans in data.answers" ng-if="$index < 2" ng-model="data.answer" ng-value="$index" icon="ion-asterisk">
+            {{ ans }}
           </ion-radio>
         </div>
       </div>
@@ -35,16 +30,10 @@
       <div class="row">
         <div class="button-bar">
 
-          <ion-radio class="col col-50"
-         ng-repeat="ans in data.answers"
-         ng-if="$index >= 2"
-         ng-model="data.answer"
-         ng-value="$index"
-         icon="ion-asterisk">
+          <ion-radio class="col col-50" ng-repeat="ans in data.answers" ng-if="$index >= 2" ng-model="data.answer" ng-value="$index" icon="ion-asterisk">
             {{ ans }}
-        </ion-radio>
-      </div>
-
+          </ion-radio>
+        </div>
       </div>
     </div>
 
