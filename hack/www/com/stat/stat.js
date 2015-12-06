@@ -32,8 +32,8 @@ function StatCtrl($scope, $timeout,SocketServ, DatabaseServ) {
   SocketServ.on("Student Receives", function (data) {
     stop();
     // NOTE: UNCOMMENT IF PRESENT
-    // $scope.counter = 15;
-    $scope.counter = 2;
+    $scope.counter = 15;
+    // $scope.counter = 2;
 
     countdown();
     console.log(data);
