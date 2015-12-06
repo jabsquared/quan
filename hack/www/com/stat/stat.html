@@ -14,7 +14,7 @@
 
         <div class="button-bar">
           <div class="answer col col-50" ng-if="$index < 2" ng-repeat="ans in data.answers">
-            {{ ans }} : {{score[$index]}}
+              {{ ans }} : {{((data.scores[$index] / data.count) * 100)||0}}%
           </div>
         </div>
       </div>
@@ -23,7 +23,7 @@
         <div class="button-bar">
 
           <div class="answer col col-50" ng-if="$index >= 2" ng-repeat="ans in data.answers">
-            {{ ans }} : {{score[$index]}}
+            {{ ans }} : {{((data.scores[$index] / data.count) * 100)||0}}%
           </div>
         </div>
 
