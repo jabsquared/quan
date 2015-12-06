@@ -5,7 +5,7 @@ function TeacherCtrl($scope, $ionicPopup, SocketServ, DatabaseServ) {
 
   $scope.pushQuestion = function(q) {
     console.log("Question (" + q.question + ") Pushed!");
-    // q.answer = index;
+
     SocketServ.emit('Teacher Asks', q);
     var alertPopup = $ionicPopup.alert({
       title: 'Success',
