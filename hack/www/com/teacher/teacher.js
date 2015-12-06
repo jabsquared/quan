@@ -8,8 +8,9 @@ function TeacherCtrl($scope, SocketServ, QuestionServ) {
     SocketServ.emit('Teacher Asks', q);
   };
 
-  SocketServ.on("Student Answers", function (data) {
-    
+  SocketServ.on("Teacher Receives", function (data) {
+    console.log("Studnet Response:");
+    console.log(data);
   });
 
   $scope.questions = QuestionServ.getAll();
