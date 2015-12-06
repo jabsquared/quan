@@ -28,6 +28,7 @@ function StudentCtrl($scope, $ionicPopup, SocketServ, DatabaseServ) {
        },
      ]
    });
+
    myPopup.then(function(res) {
      console.log('Tapped!', $scope.data);
    });

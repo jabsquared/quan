@@ -9099,6 +9099,17 @@ a.button {
 .teacher .questions {
   margin-bottom: 5px; }
 
+.stat .answer {
+  height: 10vh;
+  border: 1px solid white;
+  font-size: 1em;
+  background-color: #444;
+  color: white; }
+
+.stat .card h1 {
+  text-align: center;
+  font-size: 2em; }
+
 a {
   text-decoration: none; }
 
