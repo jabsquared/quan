@@ -9091,9 +9091,9 @@ a.button {
 
 .student .card {
   text-align: center; }
-  .student .cardh1 {
+  .student .card h1 {
     text-align: center;
-    font-size: 2em; }
+    font-size: 1.2em; }
   .student .card img {
     height: 30vh; }
 
