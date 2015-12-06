@@ -7,7 +7,7 @@ function StudentCtrl($scope, SocketServ, DatabaseServ) {
 
   };
 
-  $scope.teams = StudentServ.getAll();
+  // $scope.teams = StudentServ.getAll();
 
   $scope.submit = function () {
     console.log($scope.data);
