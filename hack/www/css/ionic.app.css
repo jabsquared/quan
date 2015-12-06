@@ -9092,6 +9092,10 @@ a.button {
 .student .list {
   padding-bottom: 30px; }
 
+.student .card h1 {
+  text-align: center;
+  font-size: 2em; }
+
 .teacher .questions {
   margin-bottom: 5px; }
 
