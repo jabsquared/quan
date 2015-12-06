@@ -31,14 +31,17 @@ function StatCtrl($scope, $timeout,SocketServ, DatabaseServ) {
   //WHEN STUENT GOT QUESTION
   SocketServ.on("Student Receives", function (data) {
     stop();
-    $scope.counter = 15;
+    // NOTE: UNCOMMENT IF PRESENT
+    // $scope.counter = 15;
+    $scope.counter = 2;
+
     countdown();
     console.log(data);
     // EMPTY PAGE WITH 0
-    $scope.data.question = data.question;
-    $scope.data.answers = data.answers;
+    $scope.data = data;
     $scope.data.scores = [0,0,0,0];
     $scope.data.count = 0;
+
     console.log("Answer: " + data.cr);
   });
 
