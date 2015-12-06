@@ -43,6 +43,7 @@ function StudentCtrl($scope, $ionicPopup, SocketServ, DatabaseServ) {
 
   SocketServ.on("Student Receives", function (data) {
     $scope.done = false;
+    $scope.data.answer = null;
     console.log(data);
     var name = $scope.data.name;
     $scope.data = data;

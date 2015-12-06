@@ -3,12 +3,16 @@
   // .padDown {
   //   padding-top: 100px;
   // }
-  .list {
-    padding-bottom: 30px;
-  }
 
-  .card h1{
+  .card {
     text-align: center;
-    font-size: 2em;
+    &h1 {
+      text-align: center;
+      font-size: 2em;
+    }
+    img {
+      height: 30vh;
+      // max-width: 100%;
+    }
   }
 }

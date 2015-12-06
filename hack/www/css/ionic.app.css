@@ -9089,12 +9089,13 @@ a.button {
   -webkit-transition-duration: 0s;
   transition-duration: 0s; }
 
-.student .list {
-  padding-bottom: 30px; }
-
-.student .card h1 {
-  text-align: center;
-  font-size: 2em; }
+.student .card {
+  text-align: center; }
+  .student .cardh1 {
+    text-align: center;
+    font-size: 2em; }
+  .student .card img {
+    height: 30vh; }
 
 .teacher .questions {
   margin-bottom: 5px; }

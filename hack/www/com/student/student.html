@@ -9,8 +9,8 @@
       <h1 ng-if="data.question">{{data.question}}</h1>
     </div>
 
-    <div class="card">
-      <img ng-if="data.answer" src="img/info/{{data.imgs[data.answer]}}"/>
+    <div class="card info-img">
+      <img ng-src="../img/info/{{data.imgs[data.answer]}}" alt="{{data.answer}}"/>
     </div>
 
   </ion-content>
