@@ -9099,9 +9099,6 @@ a.button {
 .teacher .questions {
   margin-bottom: 5px; }
 
-.home img {
-  height: 101%; }
-
 a {
   text-decoration: none; }
 
@@ -9114,6 +9111,9 @@ a {
   width: 100%;
   margin-bottom: 50px;
   padding-bottom: 0px; }
+
+.logo img {
+  height: 101%; }
 
 .sign {
   width: 100%; }
