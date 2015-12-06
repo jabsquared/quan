@@ -1,6 +1,6 @@
-'use strict()';
+'use strict';
 
-function StudentCtrl($scope, SocketServ, StudentServ) {
+function StudentCtrl($scope, SocketServ, DatabaseServ) {
   console.log('StudentCtrl');
 
   $scope.data = {
