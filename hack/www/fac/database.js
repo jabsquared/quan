@@ -10,7 +10,14 @@ function DatabaseServ() {
         "Wallet",
         "Phone",
         "ID"
-      ]
+      ],
+      imgs: [
+        'keys.png',
+        'wallet.png',
+        'phone.png',
+        'id.png',
+      ],
+
     },
     {
       question: "What is the the most common use of the phone?",
@@ -20,7 +27,13 @@ function DatabaseServ() {
         "Social Media",
         "Web",
         "Games"
-      ]
+      ],
+      imgs: [
+        'text.png',
+        'social.png',
+        'web.png',
+        'games.png',
+      ],
     },
     {
       question: "What do teachers fear the most?",
@@ -30,7 +43,14 @@ function DatabaseServ() {
         "Instagram",
         "Yoga",
         "Phone"
-      ]
+      ],
+      imgs: [
+        'snapchat.png',
+        'instagram.png',
+        'yoga.png',
+        'phone.png',
+      ],
+
     },
     {
       question: "What is the teacher's greatest challenge in a classroom?",
@@ -51,7 +71,13 @@ function DatabaseServ() {
         "Pencil",
         "Clicker",
         "Phone"
-      ]
+      ],
+      imgs: [
+        'chromebook.png',
+        'smartboard.png',
+        'pencil.png',
+        'phone.png',
+      ],
     }
   ];
 
