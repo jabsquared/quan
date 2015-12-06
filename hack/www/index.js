@@ -14,6 +14,7 @@ var app = angular.module('quan', [
   .factory('SocketServ', SocketServ)
   .factory('DatabaseServ', DatabaseServ)
   .controller('HomeCtrl', HomeCtrl)
+  .controller('StatCtrl', StatCtrl)
   .controller('TeacherCtrl', TeacherCtrl)
   .controller('StudentCtrl', StudentCtrl);
 
