@@ -5,8 +5,7 @@
       <h1 ng-if="!data.question">Waiting for statistics!</h1>
       <h1 ng-if="data.question">{{data.question}}</h1>
     </div>
-		<h1 style="text-center">Time Left</h1>
-		<h1 ng-bind="counter" style="text-center"></h1>
+		<h1 style="text-align:center">Time Left: <span ng-bind="counter" style="text-center"></span></h1>
   </ion-content>
 
   <div class="bottom-content">
