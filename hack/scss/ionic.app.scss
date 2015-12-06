@@ -64,3 +64,23 @@ a {
 .bar-dark .button {
   background-color: green;
 }
+
+.bar-dark .button.button-clear {
+  color: black;
+}
+.bar.bar-dark {
+  background-color: white;
+  border-bottom-right-radius: 1.5em;
+  border-bottom: 5px solid rgba(54,54,54,.2);
+  height: 50px;
+}
+
+.bar.bar-dark .title {
+  color: black;
+}
+
+.button.button-dark {
+  background-color: #2ECC71;
+  border-color: transparent;
+  border-radius: 100px;
+}

@@ -5,6 +5,7 @@ function DatabaseServ() {
     {
       question: "What are you less likely to leave home without?",
       category: "NONE",
+      cr: 2,
       answers: [
         "Keys",
         "Wallet",
@@ -21,6 +22,7 @@ function DatabaseServ() {
     {
       question: "What is the the most common use of the phone?",
       category: "NONE",
+      cr: 1,
       answers: [
         "Text",
         "Social Media",
@@ -37,10 +39,11 @@ function DatabaseServ() {
     {
       question: "What do teachers fear the most?",
       category: "NONE",
+      cr: 3,
       answers: [
         "SnapChat",
         "Instagram",
-        "Yoga",
+        "Yoga Pant",
         "Phone"
       ],
       imgs: [
@@ -54,6 +57,7 @@ function DatabaseServ() {
     {
       question: "What is the teacher's greatest challenge in a classroom?",
       category: "NONE",
+      cr: 0,
       answers: [
         "Interaction",
         "Budget",
@@ -66,11 +70,11 @@ function DatabaseServ() {
         'class.jpg',
         'tests.png',
       ],
-
     },
     {
       question: "What other tools have been used that haven’t worked?",
       category: "NONE",
+      cr: 4,
       answers: [
         "Chromebook",
         "Smartboard",
