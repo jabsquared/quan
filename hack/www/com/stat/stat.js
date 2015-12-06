@@ -1,6 +1,6 @@
 'use strict()';
 
-function StatCtrl($scope, $timeout,SocketServ) {
+function StatCtrl($scope, $timeout,SocketServ, DatabaseServ) {
   console.log('StatCtrl');
 
   //for timer
@@ -30,6 +30,7 @@ function StatCtrl($scope, $timeout,SocketServ) {
 
   //WHEN STUENT GOT QUESTION
   SocketServ.on("Student Receives", function (data) {
+    stop();
     $scope.counter = 15;
     countdown();
     console.log(data);
@@ -38,6 +39,7 @@ function StatCtrl($scope, $timeout,SocketServ) {
     $scope.data.answers = data.answers;
     $scope.data.scores = [0,0,0,0];
     $scope.data.count = 0;
+    console.log("Answer: " + data.cr);
   });
 
   //Add student answer to statics
