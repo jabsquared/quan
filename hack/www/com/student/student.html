@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<ion-view view-title="Student View" class="student">
+<ion-view view-title="Student View {{data.name}}" class="student">
   <ion-content>
     <!-- <button class="button button-balanced">
       submit
@@ -10,8 +10,7 @@
     </div>
 
     <div class="card">
-      <img ng-if="data.answer" src="img/info/{{data.imgs[data.answer]}}" alt="" />
-
+      <img ng-if="data.answer" src="img/info/{{data.imgs[data.answer]}}"/>
     </div>
 
   </ion-content>
