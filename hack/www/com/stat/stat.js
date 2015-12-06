@@ -1,12 +1,37 @@
 'use strict()';
 
-function StatCtrl($scope, SocketServ) {
+function StatCtrl($scope, $timeout,SocketServ) {
   console.log('StatCtrl');
+
+  //for timer
+  $scope.counter = 15;
+  var stopped;
+
+  var countdown = function() {
+    if($scope.counter < 1){
+      console.log('Stopping timer!');
+      //show correct answer!
+      stop();
+      return;
+    }
+    stopped = $timeout(function() {
+      console.log($scope.counter);
+      $scope.counter--;
+      countdown();
+    }, 1000);
+
+  };
+
+  var stop = function() {
+    $timeout.cancel(stopped);
+  };
 
   $scope.data = {};
 
   //WHEN STUENT GOT QUESTION
   SocketServ.on("Student Receives", function (data) {
+    $scope.counter = 15;
+    countdown();
     console.log(data);
     // EMPTY PAGE WITH 0
     $scope.data.question = data.question;
