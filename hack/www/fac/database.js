@@ -17,7 +17,6 @@ function DatabaseServ() {
         'phone.png',
         'id.png',
       ],
-
     },
     {
       question: "What is the the most common use of the phone?",
@@ -59,8 +58,15 @@ function DatabaseServ() {
         "Interaction",
         "Budget",
         "Class Size",
-        "Tests",
-      ]
+        "Tests"
+      ],
+      imgs: [
+        'interaction.png',
+        'budget.png',
+        'class.jpg',
+        'tests.png',
+      ],
+
     },
     {
       question: "What other tools have been used that haven’t worked?",
@@ -76,6 +82,7 @@ function DatabaseServ() {
         'chromebook.png',
         'smartboard.png',
         'pencil.png',
+        'clicker.png',
         'phone.png',
       ],
     }

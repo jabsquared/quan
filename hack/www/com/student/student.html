@@ -10,7 +10,7 @@
     </div>
 
     <div class="card">
-      <img src="" alt="" />
+      <img ng-if="data.answer" src="img/info/{{data.imgs[data.answer]}}" alt="" />
 
     </div>
 
@@ -49,7 +49,7 @@
       </div>
     </div>
 
-    <button type="button" class="button button-full button-positive" ng-click="submit()">Submit</button>
+    <button ng-disabled="done" type="button" class="button button-full button-positive" ng-click="submit()">Submit</button>
   </div>
 
 

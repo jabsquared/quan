@@ -12,13 +12,16 @@ function StatCtrl($scope, SocketServ) {
     $scope.data.question = data.question;
     $scope.data.answers = data.answers;
     $scope.data.scores = [0,0,0,0];
+    $scope.data.count = 0;
   });
 
   //Add student answer to statics
   SocketServ.on("Teacher Receives", function(data) {
     console.log("Studnet Response:");
+    $scope.data.count++;
     console.log(data);
-    $scope.score[data.answer]++;
+    $scope.data.scores[data.answer]++;
+    console.log($scope.data.scores);
   });
 
   // With the new view caching in Ionic, Controllers are only called
