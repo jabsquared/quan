@@ -59,7 +59,7 @@ function DatabaseServ() {
         "Interaction",
         "Budget",
         "Class Size",
-        "Tests"
+        "Tests",
       ]
     },
     {
