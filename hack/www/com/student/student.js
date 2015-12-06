@@ -3,6 +3,8 @@
 function StudentCtrl($scope, $ionicPopup, SocketServ, DatabaseServ) {
   console.log('StudentCtrl');
 
+  $scope.done = false;
+
   $scope.data = {
 
   };
@@ -34,11 +36,13 @@ function StudentCtrl($scope, $ionicPopup, SocketServ, DatabaseServ) {
    });
 
   $scope.submit = function () {
+    $scope.done = true;
     console.log($scope.data);
     SocketServ.emit("Student Answers", $scope.data);
   };
 
   SocketServ.on("Student Receives", function (data) {
+    $scope.done = false;
     console.log(data);
     var name = $scope.data.name;
     $scope.data = data;
