@@ -1,7 +1,7 @@
 'use strict()';
 
-function HomeCtrl($scope) {
-  console.log('HomeCtrl');
+function StatCtrl($scope) {
+  console.log('StatCtrl');
 
   // With the new view caching in Ionic, Controllers are only called
   // when they are recreated or on app start, instead of every page change.

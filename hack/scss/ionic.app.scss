@@ -18,8 +18,12 @@ $dark:                            #444 !default;
 $ionicons-font-path: '../lib/ionic/fonts' !default;
 
 // Include all of Ionic
-@import "www/lib/ionic/scss/ionic", "www/com/student/student", "www/com/teacher/teacher",
-"www/com/home/home";
+@import
+  "www/lib/ionic/scss/ionic",
+  "www/com/student/student",
+  "www/com/teacher/teacher",
+  "www/com/home/home",
+  "www/com/stat/stat";
 
 // Global Rules here:
 

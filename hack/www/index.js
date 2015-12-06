@@ -37,6 +37,11 @@ function config($stateProvider, $urlRouterProvider) {
       url: '/student',
       templateUrl: 'com/student/student.html',
       controller: 'StudentCtrl'
+    })
+    .state('stat', {
+      url: '/stat',
+      templateUrl: 'com/stat/stat.html',
+      controller: 'StatCtrl'
     });
   // .state('app.deal', {
   //   url: '/deallists/:dealId',
