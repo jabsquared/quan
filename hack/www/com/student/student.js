@@ -1,11 +1,36 @@
 'use strict()';
 
-function StudentCtrl($scope, SocketServ, DatabaseServ) {
+function StudentCtrl($scope, $ionicPopup, SocketServ, DatabaseServ) {
   console.log('StudentCtrl');
 
   $scope.data = {
 
   };
+
+  var myPopup = $ionicPopup.show({
+     template: '<input type="text" ng-model="data.name">',
+     title: 'Enter Your Name',
+     subTitle: '',
+     scope: $scope,
+     buttons: [
+      //  { text: 'Cancel' },
+       {
+         text: '<b>Save</b>',
+         type: 'button-positive',
+         onTap: function(e) {
+           if (!$scope.data.name) {
+             //don't allow the user to close unless he enters wifi password
+             e.preventDefault();
+           } else {
+             return $scope.data.name;
+           }
+         }
+       },
+     ]
+   });
+   myPopup.then(function(res) {
+     console.log('Tapped!', $scope.data);
+   });
 
   $scope.submit = function () {
     console.log($scope.data);
@@ -14,7 +39,9 @@ function StudentCtrl($scope, SocketServ, DatabaseServ) {
 
   SocketServ.on("Student Receives", function (data) {
     console.log(data);
+    var name = $scope.data.name;
     $scope.data = data;
+    $scope.data.name = name;
   });
 
   // SocketServ.on("Teacher Asks", function (data) {
