@@ -9124,7 +9124,8 @@ a {
   padding-bottom: 0px; }
 
 .logo img {
-  height: 101%; }
+  padding-top: 9px;
+  height: 90%; }
 
 .sign {
   width: 100%; }
