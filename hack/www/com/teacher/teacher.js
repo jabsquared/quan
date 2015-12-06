@@ -1,4 +1,4 @@
-'use strict';
+'use strict()';
 
 function TeacherCtrl($scope, SocketServ, DatabaseServ) {
   console.log('TeacherCtrl');
@@ -14,5 +14,5 @@ function TeacherCtrl($scope, SocketServ, DatabaseServ) {
     console.log(data);
   });
 
-  $scope.questions = QuestionServ.getAll();
+  $scope.questions = DatabaseServ.getQuestions();
 }

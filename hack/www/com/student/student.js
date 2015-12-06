@@ -1,4 +1,4 @@
-'use strict';
+'use strict()';
 
 function StudentCtrl($scope, SocketServ, DatabaseServ) {
   console.log('StudentCtrl');
@@ -6,8 +6,6 @@ function StudentCtrl($scope, SocketServ, DatabaseServ) {
   $scope.data = {
 
   };
-
-  $scope.teams = StudentServ.getAll();
 
   $scope.submit = function () {
     console.log($scope.data);
